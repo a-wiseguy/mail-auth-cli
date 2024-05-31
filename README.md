@@ -1,7 +1,4 @@
-```markdown
 # Simple IMAP and SMTP Credential Tester
-
-Found myself often testing server connection details and annoying with copy pasting openssl commands, made this for personal use.
 
 This CLI tool allows you to test IMAP and SMTP connection details using provided credentials. 
 You can specify the connection details either through command-line options or a configuration file, but not both.
@@ -18,13 +15,13 @@ You can specify the connection details either through command-line options or a 
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/yourusername/imap_smtp_tester.git
+git clone https://github.com/a-wiseguy/mail-auth-cli.git
 ```
 
 2. Navigate to the project directory:
 
 ```sh
-cd imap_smtp_tester
+cd mail-auth-cli
 ```
 
 3. (Optional) Create a virtual environment:
@@ -47,7 +44,7 @@ You can run the script using either CLI options or a JSON configuration file.
 ### Using CLI Options
 
 ```sh
-python imap_credential_tester.py --imap-host <IMAP_HOST> --smtp-host <SMTP_HOST> --username <USERNAME> --password <PASSWORD> [OPTIONS]
+python mail-auth-cli.py --imap-host <IMAP_HOST> --smtp-host <SMTP_HOST> --username <USERNAME> --password <PASSWORD> [OPTIONS]
 ```
 
 ### Using a Configuration File
@@ -71,7 +68,7 @@ Create a JSON file (e.g., `config.json`) with the following structure:
 Run the script with the configuration file:
 
 ```sh
-python imap_credential_tester.py --config-file config.json
+python mail-auth-cli.py --config-file config.json
 ```
 
 ### Command-Line Options
@@ -93,7 +90,7 @@ python imap_credential_tester.py --config-file config.json
 Testing both IMAP and SMTP connections with verbose output:
 
 ```sh
-python imap_credential_tester.py --imap-host mail.example.com --smtp-host mail.example.com --username user@example.com --password passwordhere --verbose
+python mail-auth-cli.py --imap-host mail.example.com --smtp-host mail.example.com --username user@example.com --password passwordhere --verbose
 ```
 
 ## Contributing
@@ -106,7 +103,7 @@ python imap_credential_tester.py --imap-host mail.example.com --smtp-host mail.e
 
 ## Issues
 
-If you encounter any issues, please create a new issue in the [GitHub repository](https://github.com/awiseguy/imap_smtp_tester/issues).
+If you encounter any issues, please create a new issue in the [GitHub repository](https://github.com/a-wiseguy/mail-auth-cli/issues).
 
 ## Contact
 
